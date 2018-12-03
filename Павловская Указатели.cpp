@@ -16,7 +16,7 @@ int main()
 	}
 	
 	srand(time(NULL));
-	cout << "Íà÷àëüíàÿ ìàòðèöà: \n" << endl;
+	cout << "ÐÐ°Ñ‡Ð°Ð»ÑŒÐ½Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð°: \n" << endl;
 	for (int i = 0; i < x; ++i)
 	{
 		for (int j = 0; j < y; ++j)
@@ -56,7 +56,7 @@ int main()
 		}
 	}
 
-	cout << "\nÑãëàæåííàÿ ìàòðèöà: " << endl;
+	cout << "\nÐ¡Ð³Ð»Ð°Ð¶ÐµÐ½Ð½Ð°Ñ Ð¼Ð°Ñ‚Ñ€Ð¸Ñ†Ð°: " << endl;
 	for (int i = 0; i < x; ++i)
 	{
 		for (int j = 0; j < y; ++j)
