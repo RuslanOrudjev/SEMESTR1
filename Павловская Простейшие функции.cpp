@@ -42,7 +42,7 @@ void qs(struct TRAIN *arr, int first, int last)
 
 void print(struct TRAIN *arr, int n)
 {
-	cout << "Ïóíêò íàçíà÷åíèÿ\tÍîìåð\tÂðåìÿ\n";
+	cout << "ÐŸÑƒÐ½ÐºÑ‚ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ\tÐÐ¾Ð¼ÐµÑ€\tÐ’Ñ€ÐµÐ¼Ñ\n";
 	for (int i(0); i < n; i++)
 		cout << arr[i].name << '\t' << arr[i].number << '\t' << arr[i].time << '\n';
 	cout << endl;
@@ -56,19 +56,19 @@ int main(int argc, char *argv[])
 	TRAIN* train = new TRAIN [N];
 	for (int i(0); i < N; i++)
 	{
-		cout << "Ïóíêò íàçíà÷åíèÿ: ";
+		cout << "ÐŸÑƒÐ½ÐºÑ‚ Ð½Ð°Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ: ";
 		getline(cin, train[i].name);
-		cout << "Íîìåð: ";
+		cout << "ÐÐ¾Ð¼ÐµÑ€: ";
 		cin >> train[i].number;
 		cin.get();
-		cout << "Âðåìÿ: ";
+		cout << "Ð’Ñ€ÐµÐ¼Ñ: ";
 		getline(cin, train[i].time);
 		system("cls");
 	}
 	print(train, N);
-	qs(train, 0, N - 1); //Áûñòðàÿ ñîðòèðîâêà
+	qs(train, 0, N - 1); //Ð‘Ñ‹ÑÑ‚Ñ€Ð°Ñ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ°
 	int n;
-	cout << "Íîìåð ïîåçäà: ";
+	cout << "ÃÃ®Ã¬Ã¥Ã° Ã¯Ã®Ã¥Ã§Ã¤Ã : ";
 	cin >> n; 
 	bool f = 1;
 	for (int k = 0; k < N; k++)
@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 			f = 0;
 			break;
 		}
-	if (f) cout << "Íåò òàêîãî íîìåðà ïîåçäà";
+	if (f) cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð½Ð¾Ð¼ÐµÑ€Ð° Ð¿Ð¾ÐµÐ·Ð´Ð°";
 	cout << endl;
 	print(train, N);
 	_getch();
